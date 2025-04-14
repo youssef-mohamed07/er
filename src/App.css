@@ -1277,4 +1277,10 @@ header {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
 }
