@@ -727,4 +727,17 @@
   width: 4px;
   height: 4px;
   animation-delay: 3.3s;
+}
+
+/* Hero section specific modifications */
+.hero.section-full {
+  margin-top: 0; /* Remove margin as we added it to main */
+  padding-top: 130px; /* Adjusted padding to compensate for fixed header */
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+  .hero.section-full {
+    padding-top: 110px;
+  }
 } 

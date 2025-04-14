@@ -42,7 +42,7 @@ function Footer() {
             
             <div className="footer-col">
               <h4>تواصل معنا</h4>
-              <p><i className="fas fa-map-marker-alt"></i> شارع المعرض، المنطقة الصناعية</p>
+              <p><i className="fas fa-map-marker-alt"></i> 162 ب ش 26يوليو جامعه الدول العربيه العجوزة الجيزة</p>
               <p><i className="fas fa-phone"></i> الهاتف الأول: 01117558999</p>
               <p><i className="fas fa-phone"></i> الهاتف الثاني: 01024141022</p>
               <p><i className="fas fa-phone"></i> الهاتف الثالث: 01117151999</p>
