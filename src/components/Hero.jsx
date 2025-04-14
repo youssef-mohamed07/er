@@ -3,9 +3,10 @@ import './Hero.css';
 
 function Hero() {
   const [displayText, setDisplayText] = useState('');
-  const fullText = 'خدمات كهربائية متكاملة';
+  const fullText = 'تجارة التجزئة للأجهزة الكهربائية والأثاث';
   const [textIndex, setTextIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     if (textIndex < fullText.length) {
@@ -19,18 +20,36 @@ function Hero() {
 
   useEffect(() => {
     setIsVisible(true);
-    return () => setIsVisible(false);
+    
+    const handleScroll = () => {
+      const position = window.scrollY;
+      if (position > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      setIsVisible(false);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
-    <section className="hero section-full" id="home">
+    <section className={`hero section-full ${scrolled ? 'scrolled' : ''}`} id="home">
       <div className="hero-particles">
         <div className="particle particle-1"></div>
         <div className="particle particle-2"></div>
         <div className="particle particle-3"></div>
         <div className="particle particle-4"></div>
+        <div className="particle particle-5"></div>
+        <div className="particle particle-6"></div>
       </div>
       <div className="hero-sparkles">
+        <div className="sparkle"></div>
+        <div className="sparkle"></div>
         <div className="sparkle"></div>
         <div className="sparkle"></div>
         <div className="sparkle"></div>
@@ -46,11 +65,16 @@ function Hero() {
           <div className="typing-text">
             <h2>{displayText}<span className="cursor">|</span></h2>
           </div>
-          <p>نقدم خدمات احترافية في مجال الكهرباء والصيانة لكافة المنشآت السكنية والتجارية بأعلى معايير الجودة والأمان وبأسعار منافسة</p>
+          <p>متخصصون في تجارة الأجهزة الكهربائية المنزلية والأثاث والمعدات المنزلية بأعلى جودة وأفضل الأسعار</p>
+          <div className="hero-contacts">
+            <div className="contact-item"><i className="fas fa-phone"></i> 01117558999</div>
+            <div className="contact-item"><i className="fas fa-phone"></i> 01024141022</div>
+            <div className="contact-item"><i className="fas fa-phone"></i> 01117151999</div>
+          </div>
           <div className="hero-buttons">
-            <a href="#services" className="btn btn-primary">خدماتنا</a>
+            <a href="#services" className="btn btn-primary">منتجاتنا</a>
             <a href="#contact" className="btn btn-secondary">تواصل معنا</a>
-            <a href="https://wa.me/+201234567890" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+201117558999" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i> تواصل عبر واتساب
             </a>
           </div>

@@ -21,12 +21,12 @@ function Footer() {
                 <img src={logo} alt="إبراهيم راضي" />
                 <h4>إبراهيم راضي</h4>
               </div>
-              <p>نقدم خدمات كهربائية متكاملة للمنازل والمنشآت التجارية بأعلى معايير الجودة والأمان وبأسعار منافسة.</p>
+              <p>متخصصون في تجارة الأجهزة الكهربائية المنزلية والأثاث والمعدات المنزلية بأعلى جودة وأفضل الأسعار. منذ أكثر من 10 سنوات من الخبرة في مجالنا.</p>
               <div className="footer-social">
                 <a href="#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
                 <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
                 <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-                <a href="https://wa.me/+201234567890" className="social-icon whatsapp-icon"><i className="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/+201117558999" className="social-icon whatsapp-icon"><i className="fab fa-whatsapp"></i></a>
               </div>
             </div>
             
@@ -34,7 +34,7 @@ function Footer() {
               <h4>روابط سريعة</h4>
               <ul>
                 <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#services">منتجاتنا</a></li>
                 <li><a href="#about">من نحن</a></li>
                 <li><a href="#contact">اتصل بنا</a></li>
               </ul>
@@ -43,10 +43,12 @@ function Footer() {
             <div className="footer-col">
               <h4>تواصل معنا</h4>
               <p><i className="fas fa-map-marker-alt"></i> شارع المعرض، المنطقة الصناعية</p>
-              <p><i className="fas fa-phone"></i> الهاتف: 0123456789</p>
-              <p><i className="fas fa-envelope"></i> البريد الإلكتروني: info@electrician.com</p>
+              <p><i className="fas fa-phone"></i> الهاتف الأول: 01117558999</p>
+              <p><i className="fas fa-phone"></i> الهاتف الثاني: 01024141022</p>
+              <p><i className="fas fa-phone"></i> الهاتف الثالث: 01117151999</p>
+              <p><i className="fas fa-envelope"></i> البريد الإلكتروني: ebrhimrady2024@gmail.com</p>
               <p><i className="fas fa-clock"></i> من السبت إلى الخميس، 9 صباحًا - 9 مساءً</p>
-              <a href="https://wa.me/+201234567890" className="whatsapp-btn">
+              <a href="https://wa.me/+201117558999" className="whatsapp-btn">
                 <i className="fab fa-whatsapp"></i> تواصل معنا عبر واتساب
               </a>
             </div>
@@ -56,7 +58,7 @@ function Footer() {
       
       <div className="footer-bottom">
         <div className="container">
-          <p>جميع الحقوق محفوظة &copy; {currentYear} إبراهيم راضي</p>
+          <p>جميع الحقوق محفوظة &copy; {currentYear} إبراهيم راضي - تجارة الأجهزة الكهربائية والأثاث</p>
         </div>
       </div>
       
