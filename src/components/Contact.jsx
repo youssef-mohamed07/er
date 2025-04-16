@@ -32,12 +32,28 @@ function Contact() {
     setHoveredIcon(null);
   };
 
+  // Render email as clickable mailto link
+  const renderEmailLink = (email) => {
+    return (
+      <a href={`mailto:${email}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+        {email}
+      </a>
+    );
+  };
+
   const contactInfo = [
     { icon: 'fas fa-map-marker-alt', text: '162 ب ش 26يوليو جامعه الدول العربيه العجوزة الجيزة' },
     { icon: 'fas fa-phone', text: '01117558999' },
     { icon: 'fas fa-phone', text: '01024141022' },
     { icon: 'fas fa-phone', text: '01117151999' },
-    { icon: 'fas fa-envelope', text: 'ebrhimrady2024@gmail.com' },
+    { icon: 'fas fa-envelope', text: 'ebrhimrady2024@gmail.com', isEmail: true },
+    { icon: 'fas fa-envelope', text: 'info@Ebrahimrady.com', isEmail: true },
+    { icon: 'fas fa-envelope', text: 'hr@Ebrahimrady.com', isEmail: true },
+    { icon: 'fas fa-envelope', text: 'accounts@Ebrahimrady.com', isEmail: true },
+    { icon: 'fas fa-envelope', text: 'shadyelshazly@Ebrahimrady.com', isEmail: true },
+    { icon: 'fas fa-envelope', text: 'ebrahimnader@Ebrahimrady.com', isEmail: true },
+    { icon: 'fas fa-envelope', text: 'hagerhesham@Ebrahimrady.com', isEmail: true },
+    { icon: 'fas fa-envelope', text: 'hagersamir@Ebrahimrady.com', isEmail: true },
     { icon: 'fas fa-clock', text: 'من السبت إلى الخميس، 9 صباحًا - 9 مساءً' }
   ];
 
@@ -45,7 +61,7 @@ function Contact() {
     { icon: 'fab fa-facebook-f', url: '#', color: '#4267B2' },
     { icon: 'fab fa-instagram', url: '#', color: '#E1306C' },
     { icon: 'fab fa-twitter', url: '#', color: '#1DA1F2' },
-    { icon: 'fab fa-whatsapp', url: 'https://wa.me/+201117558999', color: '#25D366' }
+    { icon: 'fab fa-whatsapp', url: 'https://wa.me/+201024141022', color: '#25D366' }
   ];
 
   return (
@@ -58,7 +74,7 @@ function Contact() {
         <div className="contact-line line-2"></div>
       </div>
       
-      <div className="container">
+      <div className="container contact-container">
         <div className={`section-title ${animated ? 'animated' : ''}`}>
           <h2>اتصل بنا</h2>
           <p>نحن هنا لتلبية احتياجاتكم في أي وقت</p>
@@ -84,7 +100,9 @@ function Contact() {
                   <div className="contact-icon-wrapper">
                     <i className={item.icon}></i>
                   </div>
-                  <p>{item.text}</p>
+                  <p>
+                    {item.isEmail ? renderEmailLink(item.text) : item.text}
+                  </p>
                 </div>
               ))}
             </div>

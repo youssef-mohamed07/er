@@ -48,7 +48,7 @@ function Footer() {
               <p><i className="fas fa-phone"></i> الهاتف الثالث: 01117151999</p>
               <p><i className="fas fa-envelope"></i> البريد الإلكتروني: ebrhimrady2024@gmail.com</p>
               <p><i className="fas fa-clock"></i> من السبت إلى الخميس، 9 صباحًا - 9 مساءً</p>
-              <a href="https://wa.me/+201117558999" className="whatsapp-btn">
+              <a href="https://wa.me/+201024141022" className="whatsapp-btn">
                 <i className="fab fa-whatsapp"></i> تواصل معنا عبر واتساب
               </a>
             </div>

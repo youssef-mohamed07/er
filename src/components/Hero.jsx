@@ -74,7 +74,7 @@ function Hero() {
           <div className="hero-buttons">
             <a href="#services" className="btn btn-primary">منتجاتنا</a>
             <a href="#contact" className="btn btn-secondary">تواصل معنا</a>
-            <a href="https://wa.me/+201117558999" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+201024141022" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i> تواصل عبر واتساب
             </a>
           </div>
